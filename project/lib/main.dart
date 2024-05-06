@@ -21,7 +21,16 @@ class PersonalCard extends StatelessWidget {
               backgroundColor: Colors.white,
             ),
 
-            
+            Text(
+              'Radwa adel' ,
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 30,
+                fontFamily: 'Pacifico'
+
+              ),
+
+            )
           ],
         ),
       ),
