@@ -34,4 +34,3 @@ Feel free to customize this template further and make it your own. Happy coding!
 
 ---
 
-*This project was inspired by various personal card apps available on GitHub. Feel free to explore other similar projects for additional ideas and features[^1^][1].*
