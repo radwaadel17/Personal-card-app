@@ -64,7 +64,40 @@ class PersonalCard extends StatelessWidget {
                   ],
                 ),
               ),
-            )
+            ),
+            Padding(
+              padding:EdgeInsets.all(16),
+              child: Container(
+                height: 65,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(23),
+                ),
+                child: Row(
+                  children: [
+                    Spacer(
+                      flex: 3,
+                    ),
+                    Icon(
+                      Icons.email,
+                    ),
+                    Spacer(
+                      flex: 1,
+
+                    ),
+                    Text(
+                      'radwaadel959@gmail.com',
+                      style: TextStyle(
+                        fontSize: 21,
+                      ),
+                    ),
+                   Spacer(
+                    flex: 2
+                   ),
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),
