@@ -1,77 +1,118 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(PersonalCard());
+  runApp(const PersonalCard());
 }
 
 class PersonalCard extends StatelessWidget {
+  const PersonalCard({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Color(0xFF151515),
+        backgroundColor: const Color(0xFF151515),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CircleAvatar(
+            const CircleAvatar(
+              radius: 118,
+              backgroundColor: Colors.white,
               child: CircleAvatar(
                 backgroundImage: AssetImage('Images/logo.jpg'),
                 radius: 115,
               ),
-              radius: 118,
-              backgroundColor: Colors.white,
             ),
-            Text(
+            const Text(
               'Radwa adel',
               style: TextStyle(
                   color: Colors.white, fontSize: 35, fontFamily: 'Pacifico'),
             ),
-            Text(
+            const Text(
               'FLUTTER DEVELOPER',
               style: TextStyle(
                 fontSize: 13,
                 color: Colors.white,
               ),
             ),
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-              child: Container(
-                height: 65,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(23),
-                ),
-                child: Row(
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.only(left: 18),
-                      child: Icon(
-                        Icons.phone,
-                        size: 35,
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(left: 3),
-                      child: Text(
-                        '+(20) 000000000',
+            const Divider(
+              color: Colors.white,
+              indent: 60,
+              endIndent: 60,
+              height: 15,
+              thickness: 1,
+            ),
+            /* Card(
+            shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(23)) ,
+            margin: EdgeInsets.symmetric(horizontal: 16 , vertical: 8),
+              child:  ListTile(
+              leading: Icon(
+                Icons.mail,
+                color: Colors.black,
+              ),
+              title: Text(
+                        '+(20) 0000000000',
                         style: TextStyle(
                           fontSize: 23,
                         ),
                       ),
-                    )
-                  ],
+            ),
+           ), */
+
+            /* Card(
+              margin: EdgeInsets.symmetric(horizontal: 16 , vertical: 8),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(23)),
+              child: ListTile(
+                leading: Icon(
+                  Icons.email,
+                  color : Colors.black, 
                 ),
+                title: Text(
+                  '123456987' , 
+                  style: TextStyle(
+                    fontSize: 23 ,   
+                  ),
+                ),                
+              ),
+
+            ), */
+            Container(
+              margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              height: 65,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(23),
+              ),
+              child: const Row(
+                children: [
+                  Padding(
+                    padding: EdgeInsets.only(left: 18),
+                    child: Icon(
+                      Icons.phone,
+                      size: 35,
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(left: 3),
+                    child: Text(
+                      '+(20) 000000000',
+                      style: TextStyle(
+                        fontSize: 23,
+                      ),
+                    ),
+                  )
+                ],
               ),
             ),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               child: Container(
                 height: 65,
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(23),
                 ),
-                child: Row(
+                child: const Row(
                   children: [
                     Padding(
                       padding: EdgeInsets.only(left: 25),
