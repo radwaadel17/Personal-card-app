@@ -1,6 +1,5 @@
 # Personal Card App
 
-!App Screenshot
 
 ## About
 
@@ -25,12 +24,5 @@ The **Personal Card App** is a simple Flutter application that allows you to cre
 
 - **Flutter**: Make sure you have Flutter installed. If not, follow the official installation guide.
 - **Material Design Icons**: You can use icons from the Material Design Icons library.
-
-## Screenshots
-
-!App Screenshot
-
-Feel free to customize this template further and make it your own. Happy coding! 😊
-
 ---
 
